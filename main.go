@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	pkg "example/api-call/pkg/routes"
+)
 
 func main() {
-	fmt.Println("Hello World")
+	pkg.InitDB()
+	pkg.Run()
+
 }
